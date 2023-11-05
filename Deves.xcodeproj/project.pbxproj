@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3B509EC62AF7C2AF00582804 /* DevesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B509EC52AF7C2AF00582804 /* DevesApp.swift */; };
-		3B509EC82AF7C2AF00582804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B509EC72AF7C2AF00582804 /* ContentView.swift */; };
 		3B509ECA2AF7C2B100582804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B509EC92AF7C2B100582804 /* Assets.xcassets */; };
 		3B509ECD2AF7C2B100582804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B509ECC2AF7C2B100582804 /* Preview Assets.xcassets */; };
-		3B509ECF2AF7C2B100582804 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B509ECE2AF7C2B100582804 /* Persistence.swift */; };
 		3B509ED22AF7C2B100582804 /* Deves.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B509ED02AF7C2B100582804 /* Deves.xcdatamodeld */; };
+		3B509EDD2AF7C3EA00582804 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B509EDC2AF7C3EA00582804 /* sound-chime.mp3 */; };
+		3B509EE42AF7C55E00582804 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B509EE32AF7C55E00582804 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B509EC22AF7C2AF00582804 /* Deves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B509EC52AF7C2AF00582804 /* DevesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevesApp.swift; sourceTree = "<group>"; };
-		3B509EC72AF7C2AF00582804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B509EC92AF7C2B100582804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B509ECC2AF7C2B100582804 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B509ECE2AF7C2B100582804 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3B509ED12AF7C2B100582804 /* Deves.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Deves.xcdatamodel; sourceTree = "<group>"; };
+		3B509EDC2AF7C3EA00582804 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		3B509EE32AF7C55E00582804 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				3B509EC52AF7C2AF00582804 /* DevesApp.swift */,
-				3B509EC72AF7C2AF00582804 /* ContentView.swift */,
-				3B509EC92AF7C2B100582804 /* Assets.xcassets */,
-				3B509ECE2AF7C2B100582804 /* Persistence.swift */,
-				3B509ED02AF7C2B100582804 /* Deves.xcdatamodeld */,
+				3B509EDA2AF7C38700582804 /* Model */,
+				3B509ED92AF7C38100582804 /* View */,
+				3B509ED82AF7C37700582804 /* ViewModel */,
+				3B509EDB2AF7C3CD00582804 /* Supporting */,
 				3B509ECB2AF7C2B100582804 /* Preview Content */,
 			);
 			path = Deves;
@@ -71,6 +71,54 @@
 				3B509ECC2AF7C2B100582804 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B509ED82AF7C37700582804 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B509ED92AF7C38100582804 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B509EDF2AF7C42F00582804 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B509EDA2AF7C38700582804 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B509EDB2AF7C3CD00582804 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3B509ED02AF7C2B100582804 /* Deves.xcdatamodeld */,
+				3B509EDE2AF7C3F100582804 /* Sound */,
+				3B509EC92AF7C2B100582804 /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3B509EDE2AF7C3F100582804 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3B509EDC2AF7C3EA00582804 /* sound-chime.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		3B509EDF2AF7C42F00582804 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B509EE32AF7C55E00582804 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B509ECD2AF7C2B100582804 /* Preview Assets.xcassets in Resources */,
+				3B509EDD2AF7C3EA00582804 /* sound-chime.mp3 in Resources */,
 				3B509ECA2AF7C2B100582804 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,9 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B509ECF2AF7C2B100582804 /* Persistence.swift in Sources */,
 				3B509ED22AF7C2B100582804 /* Deves.xcdatamodeld in Sources */,
-				3B509EC82AF7C2AF00582804 /* ContentView.swift in Sources */,
+				3B509EE42AF7C55E00582804 /* HomeView.swift in Sources */,
 				3B509EC62AF7C2AF00582804 /* DevesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
