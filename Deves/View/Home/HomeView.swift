@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct HomeView: View {
+    // MARK: - プロパティー
+    @StateObject var cardViewModel = CardViewModel()
+    // MARK: - ボディー
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .center, spacing: 20) {
+                ForEach(cardViewModel.cardDatas) { item in
+                    CardView(cardData: item)
+                }
+            }
+            .padding(20)
+        }
+    }//: ボディー
 }
 
 #Preview {
